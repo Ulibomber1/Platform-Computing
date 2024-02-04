@@ -9,10 +9,39 @@ h1 {
     font-size: 50px;
 }
 
+p {
+    padding: 5px;
+    
+}
+
 .h3Div {
     background-color: cadetblue;
     border-width: 4px;
     border-color: black;
-    border-style:outset;
+    border-style: solid;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
     text-align: center;
 } 
+
+.columnDiv {
+    float: left;
+    width: 33%;
+    margin: 3px;
+    background-color: lightgray;
+    border-radius: 7px;
+    text-align: left;
+    
+}
+
+.rowDiv:after {
+    content: "";
+}
+
+.contentDiv {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
