@@ -1,8 +1,8 @@
 # About Me
 
-PROVIDE OVERVIEW OF ASSIGNMENT HERE
+A quick about me webpage that introduces me. 
 
-Time spent: **NUMBER_HOURS_SPENT** hours spent in total
+Time spent: 3 hours spent in total
 
 ## Features
 
@@ -19,11 +19,10 @@ The following **bonus** features are implemented:
 
 - [X] Applies different font(s). (0.5 pt)
 - [X] Applies border and margins. (0.5 pt)
-- [ ] DESCRIBE ANY OTHER FEATURES HERE.
 
-## Screenshot and/or Video Walkthrough
+## Screenshot
 
-<img src="https://imgur.com/gallery/4rAXx5x" title='Example Video Walkthrough' width='' alt='Example Video Walkthrough' />
+<img src="images\Screenshot 2024-02-07 205303.png" title='Screenshot of functional webpage:' width='' alt='Example Video Walkthrough' />
 
 
 ## Notes:
