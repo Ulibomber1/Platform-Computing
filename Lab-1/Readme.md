@@ -22,12 +22,8 @@ The following **bonus** features are implemented:
 
 ## Screenshot
 
-<img src="images\Screenshot 2024-02-07 205303.png" title='Screenshot of functional webpage:' width='' alt='Example Video Walkthrough' />
+<img src="images\Screenshot 2024-02-07 205303.png" title='Screenshot of functional webpage' width='' alt='Screenshot of functional webpage' />
 
 
 ## Notes:
-PROVIDE RELEVANT OR ADDITIONAL INFORMATION HERE. Below are formatting options to add emphasis in text
-<ul>
-  <li>**Example in bold**</li>
-  <li>*Example in italics*</li>
-</ul>
+- Resizing the browser window causes undesirable presentation of the content.
