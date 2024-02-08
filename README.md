@@ -1,2 +1,1 @@
-# Platform-Computing
- Various  assignments and projects related to and for the Platform Computing class (CSE4500) at CSUSB.
+Repository for ALL Platform computing assignments and labs. Each lab and assignment will be named named according to the names provided on canvas for CSE 4500-01.
