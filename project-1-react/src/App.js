@@ -2,18 +2,25 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+
+
   return (
     <div className="App">
       <header className="App-header">
         <h1>Arius Ulibarri</h1>
-        <img src={logo} className="App-logo" alt="logo" />
+        
         <p>
           Hello! Welcome to my about me page. My name is Arius, a current computer systems major with a minor in computer science on 
-          his last semester of college (for now). You can look at my github profile 
-          <a className="App-Link" href="https://github.com/Ulibomber1" target="_blank" rel="noopener noreferrer"> here.</a>
+          his last semester of college (for now). You can look at my github profile&nbsp;
+          <a className="App-Link" href="https://github.com/Ulibomber1" target="_blank" rel="noopener noreferrer">here.</a>
         </p>
+        <div class="tabDiv">
+          <div class="tab"><button class="tabButton">What I've Done</button></div>
+          <div class="tab"><button class="tabButton">What I'm Doing Next</button></div>
+          <div class="tab"><button class="tabButton">Hobbies & Interests</button></div>
+        </div>
         <div class="columnDiv">
-          <div class="h3Div"><h3>What I've Done</h3></div>
           <div class="contentDiv">
             <p>
               I have been programming for around 8 years now, with experience in several languages. First starting out I worked with BlitzMax BASIC, 
@@ -26,7 +33,6 @@ function App() {
           </div>
         </div>
         <div class="columnDiv">
-          <div class="h3Div"><h3>What I'm Doing Next</h3></div>
           <div class="contentDiv">
             <p>
               I am set to graduate soon, so I am currently looking for career opportunities in the software engineering and game programming fields. 
@@ -36,7 +42,6 @@ function App() {
           </div>
         </div>
         <div class="columnDiv">
-          <div class="h3Div"><h3>Hobbies & Interests</h3></div>
           <div class="contentDiv">
             <ul>
               <li>Video & Tabletop Games</li>
