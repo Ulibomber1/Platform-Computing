@@ -9,6 +9,13 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    text-align: center;
+    text-decoration: double;
+    font-weight: bold;
+    font-size: 2px;
+}
+
 input, select, button {
     font-family: inherit;
     font-size: inherit;
@@ -16,7 +23,6 @@ input, select, button {
 
 p {
     padding: 5px;
-    
 }
 
 img {

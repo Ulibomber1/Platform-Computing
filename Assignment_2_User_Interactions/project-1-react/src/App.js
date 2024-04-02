@@ -15,11 +15,8 @@ function App() {
           his last semester of college (for now). You can look at my github profile&nbsp;
           <a className="App-Link" href="https://github.com/Ulibomber1" target="_blank" rel="noopener noreferrer">here.</a>
         </p>
-        <div class="tabDiv">
-          <div class="tab"><button class="tabButton">What I've Done</button></div>
-          <div class="tab"><button class="tabButton">What I'm Doing Next</button></div>
-          <div class="tab"><button class="tabButton">Hobbies & Interests</button></div>
-        </div>
+        
+        <h3>What I've Done</h3>
         <div class="columnDiv">
           <div class="contentDiv">
             <p>
@@ -32,6 +29,8 @@ function App() {
             </p>
           </div>
         </div>
+
+        <h3>What I'm Doing Next</h3>
         <div class="columnDiv">
           <div class="contentDiv">
             <p>
@@ -41,17 +40,19 @@ function App() {
             </p>
           </div>
         </div>
+
+        <h3>Hobbies & Interests</h3>
         <div class="columnDiv">
-          <div class="contentDiv">
+          <div class="listDiv">
             <ul>
               <li>Video & Tabletop Games</li>
               <li>Bike rides</li>
               <li>Gunpla!!</li>
               <li>Anime & anime-adjacent media</li>
               <li>Anything computer programming-related</li>
-              <li>My cat, Cleo (down below)</li>
+              <li>My cat, Cleo (to the right)</li>
             </ul>
-          <img src="IMG_4442.jpeg" alt="Cleo"></img>
+            <img class="Cleo" src="IMG_4442.jpeg" alt="Cleo"></img>
           </div>
         </div>
       </header>

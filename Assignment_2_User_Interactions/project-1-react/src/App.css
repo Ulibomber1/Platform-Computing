@@ -28,45 +28,26 @@
   color: #61dafb;
 }
 
+p {
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-.tabDiv {
+ul {
+  text-align: left;
+  list-style-position: inside;
+}
+
+.listDiv {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 
-  width: 100%;
 }
 
-.tab {
-  margin-left: .125cm;
-  margin-right: .125cm;
-
-  padding: .25cm;
-  padding-left: .5cm;
-  padding-right: .5cm;
-
-  width: 100%;
-
-  background-color: black;
-
-  border-bottom-right-radius: 7px;
-  border-bottom-left-radius: 7px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.tabButton {
-  background-color: black;
-  color: white;
-  border-width: 0;
-}
-
-input, select, button {
-  font-family: inherit;
-  font-size: inherit;
+.Cleo {
+  width: 200px;
+  height: auto;
+  margin: 25px;
 }
 
 @keyframes App-logo-spin {
