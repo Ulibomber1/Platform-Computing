@@ -1,24 +1,38 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 import random
 import time
 
 # random user variables
-stepTime = .05 * random.randrange(10, 100)
+timeOnAboutMe = .05 * random.randrange(10, 250)
+timeOnGithub = .05 * random.randrange(10, 150)
 
+options = Options()
+options.add_experimental_option("detach", True)
+driver = webdriver.Chrome(options=options)
+driver.implicitly_wait(0.5)
+driver.set_page_load_timeout(20)
 
-
-driver = webdriver.Chrome()
 
 driver.get("http://localhost:3000/")
 startTime = time.time()
-pageTitle = driver.title
+print("\n\nWebpage Title: " + driver.title)
 
-driver.implicitly_wait(stepTime)
+time.sleep(timeOnAboutMe)
+siteTime = time.time()
+elapsedTime = siteTime - startTime
+print("Time on site: " + str(elapsedTime)) 
 
-driver.find_element()
+link = driver.find_element(by = By.CLASS_NAME , value="App-Link")
+linkURL = link.get_attribute('href')
+driver.get(linkURL)
+print("Github page Title: " + driver.title + "\nGithub page URL: " + linkURL)
+time.sleep(timeOnGithub)
 
-driver.quit()
 endTime = time.time()
-
 elapsedTime = endTime - startTime
+print("Time on Github: " + str(elapsedTime) + "\n\n")
+
+
