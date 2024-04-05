@@ -1,9 +1,19 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
+import pymysql
 import random
 import time
+
+#connect to localhost database
+dbConn = pymysql.connect(
+    host='localhost:3306',
+    user='root',
+    password='1208Ilikemysql!!',
+    database='schema2',
+    charset='utf8mb4',
+    cursorclass=pymysql.cursors.DictCursor)
+
 
 # random user variables
 timeOnAboutMe = .05 * random.randrange(10, 250)
@@ -36,3 +46,11 @@ elapsedTime = endTime - startTime
 print("Time on Github: " + str(elapsedTime) + "\n\n")
 
 
+try:
+    with dbConn.cursor() as cursor:
+        sql = "INSERT INTO 'user' ('id', 'browser', 'clicked_github_link', 'time_on_about_me') VALUES (%s, %s, %s, %s)"
+        cursor.execute(sql, ())
+    dbConn.commit()
+    print("Row added successfully!")
+finally:
+    dbConn.close()
