@@ -29,7 +29,7 @@ The following **bonus** features are implemented:
 PROVIDE RELEVANT OR ADDITIONAL INFORMATION HERE. Below are formatting options to add emphasis in text
 <ul>
   <li>Unique User has an affinity for list items, but will spend less time on the site for images.</li>
-  <li>**Selenium has a problem with obtaining SSL certificates from websites when using the chrome browser.** 
+  <li>Selenium has a problem with obtaining SSL certificates from websites when using the chrome browser.
     <ul>
       <li>This may be related to the webdriver's version of chrome being older than the actual chrome browser version.</li>
       <li>This does not break functionality, but does produce concerning warnings on terminal</li>
